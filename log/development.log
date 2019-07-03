@@ -2191,3 +2191,424 @@ DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is depreca
             FROM sqlite_temp_master
             WHERE name='index_songs_on_artist_id' AND type='index'
 [0m
+Started GET "/" for ::1 at 2019-07-02 23:53:13 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.7.1) lib/active_record/migration.rb:573:in `check_pending!'
+activerecord (5.0.7.1) lib/active_record/migration.rb:549:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.6) lib/rack/handler/webrick.rb:86:in `service'
+/Users/rachelhawa/.rvm/rubies/ruby-2.5.3/lib/ruby/2.5.0/webrick/httpserver.rb:140:in `service'
+/Users/rachelhawa/.rvm/rubies/ruby-2.5.3/lib/ruby/2.5.0/webrick/httpserver.rb:96:in `run'
+/Users/rachelhawa/.rvm/rubies/ruby-2.5.3/lib/ruby/2.5.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.1ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___1599279531074542050_70126834910520 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1055.6ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1169.3ms)
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSongs (20160108015311)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateSongs < ActiveRecord::Migration[4.2] (called from require at bin/rails:4)
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "songs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160108015311"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateArtists (20160108015408)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateArtists < ActiveRecord::Migration[4.2] (called from require at bin/rails:4)
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "artists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160108015408"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddArtistToSong (20160126235547)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddArtistToSong < ActiveRecord::Migration[4.2] (called from require at bin/rails:4)
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "songs" ADD "artist_id" integer[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_songs_on_artist_id" ON "songs" ("artist_id")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160126235547"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-03 04:53:28.651062"], ["updated_at", "2019-07-03 04:53:28.651062"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_songs_on_artist_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_songs_on_artist_id' AND type='index'
+[0m
+Started GET "/" for ::1 at 2019-07-02 23:54:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for ::1 at 2019-07-02 23:54:17 -0500
+  
+SyntaxError (/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:57: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+  Song Clean,ARTIST CLEAN,Release Year,COMBINED,First?...
+                    ^~~~~
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:57: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...Clean,ARTIST CLEAN,Release Year,COMBINED,First?,Year?,PlayCo...
+...                           ^~~~
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:57: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...N,Release Year,COMBINED,First?,Year?,PlayCount,F*G
+...                              ^
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:57: syntax error, unexpected '*', expecting '='
+...BINED,First?,Year?,PlayCount,F*G
+...                              ^
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:58: syntax error, unexpected keyword_in, expecting keyword_end
+  Caught Up in You,.38 Special,1982,Caught ...
+            ^~
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:58: no .<digit> floating literal anymore; put 0 before dot
+  Caught Up in You,.38 Special,1982,Caught Up in ...
+                   ^
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:58: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ght Up in You,.38 Special,1982,Caught Up in You by .38 Speci...
+...                              ^
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:58: no .<digit> floating literal anymore; put 0 before dot
+...cial,1982,Caught Up in You by .38 Special,1,1,82,82
+...                              ^
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:58: syntax error, unexpected tINTEGER, expecting '('
+...al,1982,Caught Up in You by .38 Special,1,1,82,82
+...                             ^~
+/Users/rachelhawa/Development/code/rails-long-running-tasks-lab-online-web-pt-112618/app/controllers/songs_controller.rb:58: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ght Up in You by .38 Special,1,1,82,82
+...                              ^):
+  
+app/controllers/songs_controller.rb:57: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/controllers/songs_controller.rb:57: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/controllers/songs_controller.rb:57: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+app/controllers/songs_controller.rb:57: syntax error, unexpected '*', expecting '='
+app/controllers/songs_controller.rb:58: syntax error, unexpected keyword_in, expecting keyword_end
+app/controllers/songs_controller.rb:58: no .<digit> floating literal anymore; put 0 before dot
+app/controllers/songs_controller.rb:58: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+app/controllers/songs_controller.rb:58: no .<digit> floating literal anymore; put 0 before dot
+app/controllers/songs_controller.rb:58: syntax error, unexpected tINTEGER, expecting '('
+app/controllers/songs_controller.rb:58: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__4401956987958445796_70317814544400 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (980.1ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1074.1ms)
+Started GET "/songs" for ::1 at 2019-07-02 23:56:28 -0500
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 181ms (Views: 172.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/songs/upload" for ::1 at 2019-07-02 23:56:31 -0500
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fgMlTAOlBT1KyZZ16FFOOCEROd5x+SoPYt8KO/QdcXLoTdoLOrWCuXF3ozHuTohoyXnm9nUE1/zEgXwwih8apA==", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:51:in `upload'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__4401956987958445796_70317858285100 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.8ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.8ms)
+Started POST "/songs/upload" for ::1 at 2019-07-02 23:57:51 -0500
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fgMlTAOlBT1KyZZ16FFOOCEROd5x+SoPYt8KO/QdcXLoTdoLOrWCuXF3ozHuTohoyXnm9nUE1/zEgXwwih8apA==", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:51:in `upload'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__4401956987958445796_70317860394040 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.2ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.4ms)
+Started POST "/songs/upload" for ::1 at 2019-07-02 23:58:04 -0500
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fgMlTAOlBT1KyZZ16FFOOCEROd5x+SoPYt8KO/QdcXLoTdoLOrWCuXF3ozHuTohoyXnm9nUE1/zEgXwwih8apA==", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:51:in `upload'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__4401956987958445796_70317824446780 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.8ms)
+Started GET "/" for ::1 at 2019-07-02 23:59:38 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for ::1 at 2019-07-02 23:59:42 -0500
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 20ms (Views: 12.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/songs/upload" for ::1 at 2019-07-02 23:59:44 -0500
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r4DJTxiIYctlQmQIzMI2hW4Scc3+8S8MdBCIc+6NzHo5zjYIIZjmT178UUzK3fDVhnqu5foM0v/STv54kI+nrA==", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:51:in `upload'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__4401956987958445796_70317857317320 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.1ms)
+Started POST "/songs/upload" for ::1 at 2019-07-03 00:00:45 -0500
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r4DJTxiIYctlQmQIzMI2hW4Scc3+8S8MdBCIc+6NzHo5zjYIIZjmT178UUzK3fDVhnqu5foM0v/STv54kI+nrA==", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:52:in `upload'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__4401956987958445796_70317824328260 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.9ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.1ms)
+Started POST "/songs/upload" for ::1 at 2019-07-03 00:01:07 -0500
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r4DJTxiIYctlQmQIzMI2hW4Scc3+8S8MdBCIc+6NzHo5zjYIIZjmT178UUzK3fDVhnqu5foM0v/STv54kI+nrA==", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/songs_controller.rb:52:in `upload'
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.2ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_rachelhawa__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__4401956987958445796_70317823609980 at /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.4ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rachelhawa/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.8ms)
